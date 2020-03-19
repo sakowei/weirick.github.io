@@ -1,10 +1,4 @@
 @charset "UTF-8";
-
-@font-face {
-  font-family: Mono;
-  src: url("./JetBrainsMono-Regular.ttf") format("TrueType");
-}
-
 @media screen and (max-width: 799px) {
   .container {
     width: 82%;
@@ -28,9 +22,7 @@
 
 ::selection {background:rgb(92, 168, 255);color:#fff}
 
-* {
-  font: 22px/1.2 Mono, sans-serif;
-}
+* { font: 22px/1.2 sans-serif monospace; }
 
 body {
   background-size: 20px 20px;
