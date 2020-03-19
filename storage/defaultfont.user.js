@@ -2,6 +2,7 @@
 // @name              所有站点使用默认字体样式
 // @namespace         https://gitub.com/weirick/AllSiteDefaultFont
 // @version           0.44
+// @icon              https://weirick.github.io/storage/font.png
 // @description       设置所有网站字体样式：微软雅黑+取消加粗
 // @author            RCWei
 // @license           GPL-3.0
