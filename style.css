@@ -3,21 +3,21 @@
   .container {
     width: 82%;
     margin-left: 2rem;
-  }
+   }      .container article { margin: 0 0 0 .14em; }
 }
 
 @media screen and (min-width: 801px) and (max-width: 1000px) {
   .container {
     width: 70%;
     margin-left: 2.8rem;
-  }
+  }    .container article { margin: 0 0 0 .2em; }
 }
 
 @media screen and (min-width: 1000px) {
   .container {
     margin-left: 3.4rem;
     width: 44%;
-  }
+  }    .container article { margin: 0 0 0 .44em; } 
 }
 
 ::selection {background:rgb(92, 168, 255);color:#fff}
@@ -112,10 +112,7 @@ header {
   margin-left: -.5rem;
 }
 
-.container {
-  margin-top: 2.2rem;
-}
-
+.container { margin-top: 2.2rem; }
 footer {
   margin: 2rem 0 1rem 0;
   font-size: 16px;
