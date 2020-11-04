@@ -33,10 +33,10 @@
 body {
   background-size: 20px 20px;
   line-height: 30px;
-  background-image: linear-gradient(to right, transparent 19.5px, rgba(77, 163, 228, 1) 20px),
-    linear-gradient(to left, transparent 19.5px, rgba(77, 163, 228, 1) 20px),
-    linear-gradient(to top, transparent 19.5px, rgba(77, 163, 228, 1) 20px),
-    linear-gradient(to bottom, transparent 19.5px, rgba(77, 163, 228, 1) 20px)
+  background-image: linear-gradient(to right, transparent 19.5px, rgba(77, 163, 228, .44) 20px),
+    linear-gradient(to left, transparent 19.5px, rgba(77, 163, 228, .44) 20px),
+    linear-gradient(to top, transparent 19.5px, rgba(77, 163, 228, .44) 20px),
+    linear-gradient(to bottom, transparent 19.5px, rgba(77, 163, 228, .44) 20px)
   ;
   background-color: #f8f8f8;
   color: #2c3f51;
