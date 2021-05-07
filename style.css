@@ -29,7 +29,7 @@ body {
 
 header {
   margin: 3rem auto;
-  margin-bottom: 18rem;
+  /*margin-bottom: 18rem;*/
 
 }
 
@@ -69,7 +69,3 @@ header a {
 }
 
 header a:hover {background-color: navy}
-
-.skill {
-  
-}
