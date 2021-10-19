@@ -1,19 +1,87 @@
 <!DOCTYPE html>
-<html lang="cmn-hans">
+<html lang="zh-hans">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
-  <title>沢原浩輔</title>
+  <link rel="stylesheet" href="index.css">
+  <title>RhicioWei (沢原浩輔)</title>
 </head>
 <body>
-  <div class="container">
+  <div class="app">
     <header>
-      <h2>Hello,</h2>
-      <h1>I'm 沢原浩輔.</h1>
-      <p>Web Designer <span class="splash">/</span> UP主 <span class="splash">/</span> Writer</p>
-      <a target="_blank" href="https://weirick.github.io/biz-card/biz.html">个人名片</a>
+      <!-- <div class="avatar"></div> -->
+      <div class="title">
+        <h2>Hello!</h2>
+        <h1>I'm <span>RihcioWei</span></h1>
+      </div>
     </header>
+    <div class="nav-box">
+      <nav>
+        <ul>
+          <li><a href="">Home</a></li>
+          <li><a href="#proj">Projects<a></li>
+          <li><a href="#me">About Me</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <div id="home" class="content home">
+      <img src="images/undraw_Deveact.png" alt="">
+      <div class="intro">
+        <p> > Hello, I'm RihcioWei aka. 威大将Rick</p>
+        <br>
+        <p>👨‍💻 Working for UI Design and Vue.js Dev.</p>
+        <p>🎬 Video Creator on <a href="https://space.bilibili.com/123384044">Bilibili</a></p>
+        <p>🏡 Like to hang-out and photographing</p>
+        <p>🥤 Pepsi and Cola lover</p>
+      </div>
+    </div>
+
+    <div id="proj" class="content proj">
+      <div class="proj-title">
+        <h3>My Github Repos</h3>
+        <a href="https://github.com/weirick">Find more...</a>
+      </div>
+      <div class="card-box">
+        <div class="card" onclick="javascript:location.href='https://github.com/weirick/MyCSSZenGarden'">
+          <ul>
+            <li>
+              <h4>MyCSSZenGarden</h4><span class="pub">Public</span>
+            </li>
+            <li><p class="desc">CSS 禅意花园 (School Project)</p></li>
+            <li>
+              <div class="lang"></div>
+              <span>HTML</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="card" onclick="javascript:location.href='https://github.com/weirick/inxiang'">
+          <ul>
+            <li>
+              <h4>inxiang</h4><span class="pub">Archive</span>
+            </li>
+            <li><p class="desc">图片分享系统</p></li>
+            <li>
+              <div class="lang" style="background-color: #4F5D95;"></div>
+              <span>PHP</span>
+            </li>
+          </ul>
+        </div> 
+      </div>
+    </div>
+
+    <div id="me" class="content me">
+      <h3>About Me</h3>
+      <p>
+        惑珠荐链佣欢爵词篷残竹柳，根姿箭！境言层晃调。庞尤剥倒咀吼责。做如它败到缸龄恕丸拔泊再样勇获催抢销蔓钱始艘愈旁烤，殿蚀着婶哑酵灾赞夸素符燕笨魔骑刀浊栏逮矾积机。
+      </p>
+      <p>
+        满泵已愉傻通零宅瓜昌震橄羟消昏铡扔摧著忘篇忙辽判溴肪心鉴垅七，雀酯涉廉进谦瓷岘武迈竭宜啉党湾君述蒂台噪眨矩独经阅勘鹿附。卓苞盏咬仟珍趣享伙耸早及轰溪鲤迄崖掘绞接经窍季农砖宙禽醋睦茄视煤今灾炕旋杜复络械顽瘠炎猎散苹！
+      </p>
+    </div>
+
+    <footer>Hello from GuangDong.</footer>
   </div>
 </body>
 </html>
