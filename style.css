@@ -1,0 +1,263 @@
+@charset "UTF-8";
+@import url(https://fonts.googleapis.com/css?family=Ubuntu:200,400,500,600);
+:root {
+  --mian-bg: #fff;
+  --2nd-bg: #eee;
+  --text: #333;
+  --btn: rgb(204,204,204);
+  --footer: #ccc6;
+  --link: hsla(210, 60%, 50%, .4);
+}
+
+:root.dark {
+  --mian-bg: #2c2c2c;
+  --2nd-bg: #1B1A23;
+  --text: #eee;
+  --btn: #007ACC;
+  --footer: #1116;
+  --link: rgba(255,255,255,.4);
+  --toggle: 28px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: space-evenly;
+}
+
+nav ul, .shelf {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+}
+
+
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  font-family: Ubuntu, 冬青黑简体, 思源黑体, sans-serif;
+  color: var(--text);
+  background-color: var(--mian-bg);
+}
+
+h3 {
+  margin: 2rem 0;
+  font-weight: normal;
+}
+
+a {
+  position: relative;
+  color: var(--text);
+  text-decoration: none;
+}
+
+a::after {
+  content: '';
+  border-radius: 4px;
+  position: absolute;
+  top: 80%;
+  right: -.1rem;
+  bottom: 0;
+  left: -.1rem;
+  background-color: var(--link);
+  transition: top .2s cubic-bezier(0.165, 0.84, 0.44, 1);
+  z-index: -1;
+}
+
+a:hover::after {
+  top: 0;
+}
+
+header, .content, footer {width: 100%;}
+
+header {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 14rem;
+  background-color: var(--2nd-bg);
+}
+
+header .title {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin-left: 1.5rem;
+}
+
+header .title h1 {
+  font-size: 2.5rem;
+  font-weight: normal;
+}
+
+header img {
+  display: block;
+  border-radius: 50%;
+  width: 4.5rem;
+  height: 4.5rem;
+}
+
+.title .quote {
+  font-size: .85rem;
+}
+
+nav {
+  position: sticky;
+  display: flex;
+  justify-content: center;
+  top: 0;
+  height: 2rem;
+  line-height: 2em;
+  width: 100%;
+  z-index: 100;
+  background-color: var(--2nd-bg);
+}
+
+nav ul li { padding: 0 .6rem; }
+
+.switcher {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  z-index: 1000;
+}
+
+.switcher > * {margin: 0 6px;}
+
+ion-icon {
+  font-size: 1.2rem;
+  color: var(--text);
+}
+
+.toggle {
+  padding: 6px;
+  width: 60px;
+  height: 30px;
+  border-radius: 20px;
+  background-color: var(--btn);
+  cursor: pointer;
+}
+
+.circle {
+  position: relative;
+  bottom: .1rem;
+  width: 20px;
+  height: 20px;
+  border-radius: 100%;
+  background-color: #fff;
+  transform: translateX(var(--toggle, 0));
+  transition: transform .1s ease-in;
+  pointer-events: none;
+}
+
+.content {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.content h3 {
+  font-size: 1.2rem;
+}
+
+.home {
+  min-height: 20rem;
+  overflow: hidden;
+}
+
+.home .desc p {
+  margin: .25rem 0;
+  line-height: 1.4rem;
+}
+
+.read, .me {
+  justify-content: flex-start;
+}
+
+.read {
+  display: flex;
+  align-items: center;
+  min-height: 24em;
+}
+
+.read ul li {
+  width: 140px;
+  display: inline-block;
+  margin: 0 25px 15px 0;
+}
+
+
+.shelf li img {
+  width: 100%;
+  height: 100%;
+  margin-bottom: 7px;
+}
+
+.shelf li .info > * {
+  display: block;
+  font-size: 14px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  cursor: default;
+}
+
+.read .info :first-child {color: dodgerblue;}
+
+.me {
+  min-height: 40em;
+}
+
+.note {
+  width: 80%;
+  text-align: center;
+  padding: 2rem 1rem;
+  background-color: var(--2nd-bg);
+  font-size: 2rem;
+  border-radius: 1rem;
+  letter-spacing: .1rem;
+  opacity: 1;
+  transition: opacity .5s ease-out;
+}
+
+.note:hover {
+  opacity: 0;
+}
+
+footer {
+  position: sticky;
+  bottom: 0;
+  height: 2em;
+  line-height: 2em;
+  font-size: .8rem;
+  text-align: center;
+  background-color: var(--footer);
+  backdrop-filter: blur(4px);
+  z-index: 100;
+}
+
+footer img {
+  position: absolute;
+  bottom: .3rem;
+  margin-left: .5rem;
+  height: 1rem;
+}
