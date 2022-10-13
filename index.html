@@ -2,24 +2,13 @@
 <html lang="cmn-hans">
 <head>
   <meta charset="UTF-8">
+  <link rel="shortcut icon" href="./favicon.ico">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu">
   <link rel="stylesheet" href="style.css">
-  <title>🥒 I'm Pickle Rick!!</title>
+  <title>I'm Pickle Rick!!</title>
 </head>
 <body>
-  <div class="day-switcher">
-    <div class="switcher">
-      <ion-icon name="sunny-outline"></ion-icon>
-      <div class="toggle">
-        <div class="circle"></div>
-      </div>
-      <ion-icon name="moon-outline"></ion-icon>
-    </div>
-  </div>
-
   <header>
     <img src="img/pickle rick.jpg">
     <div class="title">
@@ -34,83 +23,82 @@
     <ul>
       <li><a href="#">Home</a></li>
       <li><a href="#read">Bookshelf</a></li>
-      <li><a href="#me">Project</a></li>
+      <li><a href="#project">Project</a></li>
+      <li><a href="#me">Me!!</a></li>
     </ul>
   </nav>
 
   <div id="home" class="content home">
     <div class="desc">
       <ul>
-        <li>📘 Working on UI Design and Web Dev.</li>
-        <li>🎥 Creator of some videos on Bilibili</li>
-        <li>📸 Like to hang-out and photographing</li>
-        <li>🥃 Pepsi and Cola lover</li>
+        <li>👋 Hello, I'm Rick Hsiao, just call me Rick</li>
+        <li>🔊 Chinese & English speaker, 日本語勉强中</li>
+        <li>📘 Working for UI Design and DevOps</li>
+        <li>🎥 We-media of Bilibili - <a href="https://space.bilibili.com/123384044" target="_blank" style="font-weight: 500;">威酱Rick</a></li>
+        <li>📸 Like to hang-out, writing and photographing</li>
+        <li>☕ Coke and coffee lover</li>
       </ul>
     </div>
   </div>
 
   <div id ="read" class="read content">
-    <h3>Bookshelf</h3>
+    <h3>Lit' Bookshelf</h3>
     <ul class="shelf">
-      <li>
+      <a href="https://book.douban.com/subject/35680099/" target="_blank"><li>
         <img src="./img/idolwasburn.jpg" alt="">
         <div class="info">
           <div class="title">偶像失格</div>
           <div class="author">[日]宇佐见铃</div>
         </div>
-      </li>
-      <li>
+      </li></a>
+      <a href="https://book.douban.com/subject/35680662/" target="_blank"><li>
         <img src="./img/storystore.jpg" alt="">
         <div class="info">
           <div class="title">故事便利店</div>
           <div class="author">骆以军</div>
         </div>
-      </li>
-      <li>
+      </li></a>
+      <a href="https://book.douban.com/subject/35668915/" target="_blank"><li>
         <img src="./img/revenge.jpg" alt="">
         <div class="info">
           <div class="title">草坪的复仇</div>
           <div class="author" title="[美国] 理查德・布劳提根">[美国] 理查德・布劳提根</div>
         </div>
-      </li>
-      <li>
+      </li></a>
+      <a href="https://book.douban.com/subject/35947144/" target="_blank"><li>
         <img src="./img/objlesson.jpg" alt="">
         <div class="info">
           <div class="title" title="巴黎评论・短篇小说课堂<">巴黎评论・短篇小说课堂</div>
           <div class="author" title="美国《巴黎评论》编辑部 编">美国《巴黎评论》编辑部 编</div>
         </div>
-      </li>
+      </li></a>
     </ul>
   </div>
 
-  <div id="me" class="content me">
+  <div id="project" class="content project">
     <h3>Project</h3>
-    <!-- TODO: 关于我 -->
-    <div class="books">
-      <p>麦片行记.pdf</p>
-    </div>
-    <div class="social">
-      <h4>Subcribe me now</h4>
-      <ul class="media">
-        <li>Bilibili</li>
-        <li>Instagram</li>
-        <li>Github</li>
-        <li></li>
-      </ul>
+    <div class="books" title="点击以查看该PDF">
+      <a href="./storage/maipix.pdf" target="_blank">
+        <img src="./img/pdfcover.jpg">
+        <p>麦片行记.pdf</p>
+      </a>
     </div>
   </div>
 
-  <footer>Hello from Guangdong. <a href="https://github.com/weirick" target="_blank"><img src="https://img.shields.io/badge/Rihcio-Wei-blue.svg?longCache=true&style=flat"></a></footer>
-</body>
+  <div id="me" class="content me">
+    <h3>Subscribe me</h3>
+    <ul>
+      <li><a href="" target="_blank">Bilibili @威酱Rick</a></li>
+      <li><a href="" target="_blank">Weibo @威酱Rick</a></li>
+      <li><a href="" target="_blank">Github @weirick</a></li>
+      <li><a href="https://www.instagram.com/sawa_wei/" target="_blank">Instagram @sawa_wei</a></li>
+    </ul>
+  </div>
 
-<script>
-  var html = document.querySelector('html');
-  document.querySelector('.switcher').addEventListener('click', () => {
-    if (html.classList.contains('dark')) {
-      html.classList.remove('dark');
-    } else {
-      html.classList.add('dark');
-    }
-  });
-</script>
+  <footer>
+    Hello from Guangdong. 
+    <a href="https://github.com/weirick" target="_blank"><img src="https://img.shields.io/badge/Rihcio-Wei-blue.svg?longCache=true&style=flat"></a>
+  </footer>
+
+</body>
 </html>
